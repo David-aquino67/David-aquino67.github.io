@@ -1,0 +1,678 @@
+body {
+    /* Aquí pones el enlace de la imagen que elijas */
+    /* background-image: url(''); */
+    background-size: cover; /* Hace que la imagen ocupe toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Evita que el fondo se mueva al hacer scroll */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;          /* Forzamos a que el body sea exactamente el alto de la pantalla */
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+}
+
+
+
+/* Fondo decorativo */
+.background .bg-img {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+
+
+/* Contenedor del libro */
+
+.album-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 100%;
+
+}
+
+
+
+/* Estilo del álbum / páginas */
+
+#album {
+    width: 700px;
+    height: 500px;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.4);
+    margin: 0 auto;
+}
+
+
+
+/* Páginas generales */
+
+.page {
+    background-color: #fdfaf3; /* Color papel hueso */
+    box-shadow: inset 3px 0px 20px rgba(0,0,0,0.1); /* Sombra en el lomo */
+    box-sizing: border-box;
+    border-radius: 0 5px 5px 0; /* Esquinas redondeadas a la derecha */
+    width: 350px; /* Mitad del ancho total del a */
+    height: 500px;
+    overflow: hidden; /* Evita que las imágenes se salgan */
+    position: relative;
+}
+
+.foto, .foto-portada, .marco-foto img {
+
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+
+/* CORRECCIÓN DE LA PORTADA: Debe ser la única visible al inicio */
+
+#album .portada {
+
+    z-index: 2;
+
+}
+
+.portada::before {
+
+    content: '';
+
+    position: absolute;
+
+    right: -5px;
+
+    top: 5px;
+
+    width: 5px;
+
+    height: 590px;
+
+    background: linear-gradient(to right, #ccc, #eee, #ccc);
+
+    border-radius: 0 2px 2px 0;
+
+    z-index: -1;
+
+}
+
+.portada {
+
+    border-radius: 5px 15px 15px 5px !important;
+
+    /* Quitamos el borde izquierdo transparente que causa el efecto de hoja blanca */
+
+    border-left: none !important;
+
+}
+
+/* Sombra del lomo central (Efecto de profundidad) */
+
+#album::after {
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    left: 50%;
+
+    width: 2px;
+
+    height: 100%;
+
+    background: rgba(0,0,0,0.2);
+
+    z-index: 5;
+
+    pointer-events: none;
+
+}
+
+/* PORTADA Y CONTRAPORTADA */
+
+.page.cover {
+
+    background-color: #4b3621; /* Café cuero */
+
+    background-image: url('https://www.transparenttextures.com/patterns/leather.png'); /* Textura sutil */
+
+    color: #e0c097; /* Dorado para el texto */
+
+    border-radius: 5px;
+
+    padding: 20px;
+
+}
+
+
+
+.page.cover h1 {
+
+    font-size: 3rem;
+
+    border: 2px solid #e0c097;
+
+    padding: 20px;
+
+    margin-top: 50px;
+
+}
+
+/* Portada */
+
+/* Importar fuentes elegantes */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+
+
+.portada {
+
+    background: #2e2a36; /* Color oscuro base */
+
+    background-image: url('https://www.transparenttextures.com/patterns/dark-leather.png'); /* Textura de cuero */
+
+    color: #e0c097; /* Color crema/dorado */
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    border-radius: 5px 15px 15px 5px !important; /* Esquina de lomo más recta */
+
+    position: relative;
+
+    border-left: 10px solid #1a181f; /* Simulación de profundidad del lomo */
+
+}
+
+
+
+.contenido-portada {
+
+    border: 2px solid #e0c097;
+
+    margin: 20px;
+
+    padding: 40px 20px;
+
+    height: calc(100% - 80px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-around;
+
+}
+
+
+
+.portada h1 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 2.5rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 5px;
+
+    margin: 0;
+
+}
+
+
+
+.decoracion-linea {
+
+    width: 50px;
+
+    height: 2px;
+
+    background: #e0c097;
+
+    margin: 10px auto;
+
+}
+
+
+
+#names {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 2.4rem;
+
+    display: block;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.marco-foto-portada {
+
+    background: white;
+
+    padding: 10px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+
+    width: 70%;
+
+    margin: 0 auto;
+
+    transform: rotate(-1deg);
+
+}
+
+
+
+.foto-portada {
+
+    width: 100% !important;
+
+    height: auto;
+
+    border-radius: 0; /* Las fotos físicas no suelen ser circulares */
+
+}
+
+
+
+/* El separador dorado arriba */
+
+.marcador {
+
+    position: absolute;
+
+    top: 0;
+
+    right: 40px;
+
+    width: 30px;
+
+    height: 50px;
+
+    background: #e0c097;
+
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);
+
+    z-index: 10;
+
+}
+
+
+
+.instruccion {
+
+    font-size: 0.8rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    opacity: 0.7;
+
+    margin-top: 20px;
+
+}
+
+
+
+/* Estilo final */
+
+.final {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 26px;
+
+}
+
+
+
+/* Botones */
+
+.controls {
+    margin-top: 15px;
+    display: flex;
+    gap:15px;
+}
+
+button {
+    background: #353535;
+    color: white;
+    padding: 12px 22px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #555;
+}
+
+/* Imagen interna */
+.foto {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+#album {
+    transition: transform .4s ease-in-out;
+}
+
+/* PÁGINA DE LA FOTO (LADO IZQUIERDO) */
+.inside-cover {
+    background-color: #5d4037 !important;
+    border-right: 5px solid rgba(0,0,0,0.2); /* Simulación de lomo */
+}
+
+.album-photo {
+
+    width: 100%;
+
+    max-height: 350px;
+
+    object-fit: cover;
+
+    border: 8px solid white;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    transform: rotate(-2deg); /* Un poco inclinada para realismo */
+
+}
+
+h3 {
+
+    color: #4b3621;
+
+    border-bottom: 1px solid #dcdde1;
+
+    padding-bottom: 10px;
+
+}
+
+
+
+p {
+
+    line-height: 1.6;
+
+    color: #2f3640;
+
+    text-align: justify;
+
+}
+
+
+
+/* BOTONES DE DISEÑO MODERNO */
+
+.nav-button {
+
+    background: #4b3621;
+
+    border: none;
+
+    color: #e0c097;
+
+    padding: 12px 25px;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    transition: all 0.3s ease;
+
+    cursor: pointer;
+
+}
+
+
+
+.nav-button:hover {
+
+    background: #6d4c41;
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* Fondos con textura de papel */
+
+.interior-izquierda, .interior-derecha {
+
+    background-color: #fdfaf3; /* Color crema/papel */
+
+    padding: 40px;
+
+    box-shadow: inset 5px 0 15px rgba(0,0,0,0.1); /* Sombra en el pliegue central */
+
+}
+
+
+
+/* Estilo de la dedicatoria */
+
+.texto-intro {
+
+    text-align: center;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    position: relative;
+
+}
+
+
+
+.fecha {
+
+    font-size: 0.9rem;
+
+    color: #888;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+/* Marco estilo Polaroid para la foto */
+
+.marco-foto {
+    background: white;
+    padding: 15px 15px 50px 15px; /* Espacio extra abajo para el texto */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: rotate(2deg); /* Ligera inclinación para realismo */
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.marco-foto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    min-height: 200px;
+}
+
+
+
+.pie-foto {
+
+    font-family: 'Dancing Script', cursive; /* Necesitarás importar esta fuente de Google Fonts */
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    color: #444;
+
+    font-size: 1.2rem;
+
+}
+
+.interior-izquierda {
+
+    border-right: 1px solid rgba(0,0,0,0.1);
+
+    box-shadow: inset -15px 0 20px rgba(0,0,0,0.05); /* Sombra hacia la derecha */
+
+}
+
+
+
+.interior-derecha {
+
+    box-shadow: inset 15px 0 20px rgba(0,0,0,0.05); /* Sombra hacia la izquierda */
+
+}
+
+/* Corregir el desplazamiento de la portada cerrada */
+
+.album-container {
+
+    perspective: 2000px;
+
+}
+
+
+
+#album {
+
+    transition: margin-left 0.5s ease-in-out;
+
+}
+
+
+
+/* Cuando el libro está en la página 1 (portada), lo centramos */
+
+#album.p1 {
+
+    margin-left: 0; /* Ajusta esto si ves que no queda centrado */
+
+}
+
+
+
+/* Quitar la sombra interna de la portada para que no parezca una hoja interior */
+
+.portada {
+
+    box-shadow: none !important;
+
+}
+
+
+
+/* Añadir un grosor al lomo derecho cuando está cerrado */
+
+.portada::after {
+
+    content: '';
+
+    position: absolute;
+
+    right: -10px;
+
+    top: 5px;
+
+    width: 10px;
+
+    height: calc(100% - 10px);
+
+    background: linear-gradient(to right, #ccc, #eee, #ccc);
+
+    border-radius: 0 3px 3px 0;
+
+    z-index: -1;
+
+}
+
+/* Simular el pliegue del libro abierto */
+
+.interior-izquierda::after {
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    width: 30px;
+
+    height: 100%;
+
+    background: linear-gradient(to left, rgba(0,0,0,0.2), transparent);
+
+    pointer-events: none;
+
+}
+
+
+
+.interior-derecha::after {
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 30px;
+
+    height: 100%;
+
+    background: linear-gradient(to right, rgba(0,0,0,0.2), transparent);
+
+    pointer-events: none;
+
+}

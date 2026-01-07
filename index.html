@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Álbum Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+</head>
+<body>
+
+<div class="album-container">
+    <div id="album">
+        <div class="page portada">
+            <div class="marcador"></div>
+
+            <div class="contenido-portada">
+                <h1>Álbum</h1>
+                <div class="decoracion-linea"></div>
+                <span id="names">Para: ☁️⛅️☁️</span>
+
+
+                <p class="instruccion">Haz clic para abrir</p>
+            </div>
+        </div>
+
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha">29 de Noviembre, 2021</span>
+                <h2>Primera fotoooo</h2>
+                <p class="dedicatoria">"Cuando empece hacer esta idea y a recolectar las fotos me dio una inmenza nostalgia ver esta foto"</p>
+            </div>
+        </div>
+
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/1.png alt="Nuestra primera foto">
+                <p class="pie-foto">Es la primera foto que tengo contigo, cuando la tome algo me decia que iba hacer muy especial</p>
+            </div>
+        </div>
+
+
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha">29 de Noviembre, 2021</span>
+                <h2>¿Hola?</h2>
+                <p class="dedicatoria">"Estaba muy emocionado al entrar a la universidad; había dejado muchas cosas atrás, el hecho de ya no ver a las personas con las que crecí en Nayarit, ir a una nueva ciudad, lejos de casa, sin conocer a nadie, y después apareciste tú; fuiste la primera que conocí más allá de la universidad, y es un recuerdo que guardo con mucho cariño."</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/2.png alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha">29 de Noviembre, 2021</span>
+                <h2>¿Enojada?</h2>
+                <p class="dedicatoria">"En esta foto me dio mucha risa tu cara pq posamos como 15s y no podia tomar la captura"</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/3.png alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+
+
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha">07/03/2022</span>
+                <h2>Sorprendido</h2>
+                <p class="dedicatoria">"Desde el primer momento que trabaje contigo quede asombrado con la facilidad que se daba el entender las cosas
+                    , cuando te concentrabas de un momento a otro resolvias todo muy rapido, siempre se me quedara la vez que estabamos haciendo el proyecto
+                    final del doc Toriz, 3h hable y hable puras mensadas estabas hablando y derrepente dejaste de hablar, te concentraste, en 30 minutos hiciste 4 diagramas y yo en 4h no podia acabar uno
+                    . Me acuerdo que cuando dejaste de hablar hasta me asuste, dije ora que le paso te pregunte, ya habias acabado"</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/4.jpg alt="Nuestra primera foto">
+                <p class="pie-foto">Tengo varios recuerdos asi, sabes eres muy inteligente </p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2>Te vi por primera vez</h2>
+                <p class="dedicatoria">"Este fue el dia que te vi por primera vez"</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/5.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">"Recuerdo que habiamos quedado de vernos en el lago,
+                    pero me perdi la uni era muy grande, y tu mandabas mensaje, que donde estaba, y yo te dije que ya habia llegado pero andaba re perdido, te dije que levantaras la mano,
+                    me dio mucha risa que si me habias hecho caso creo que te encontre pasados 3-4 minutos y tenias la mano arriba  "</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/6.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">"Ese dia lo recuerdo tambien con muchisimo cariño por que me senti muy comodo el hablar y estar contigo"</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/7.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">"Me acuerdo que un dia, me regalaste carlota en un vasito, yo la vd no la conocia
+                    me gusto mucho"</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/8.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">"Otro recuerdo que tengo que siempre me rio, fue la vez que saque 3 con Nelva en
+                    algebra, te juro que estudie un buen habia hecho anotaciones y saque 3, estabas risa y risa pq no habias estudidado nada
+                    y habias sacado mas que yo"</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/9.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">"Me acuerdo la vez que fuimos a comer tortas y se me cayeron 500 pesos y los encontramos en el
+                    lugar donde fuimos abajo de donde estaba sentado"</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/10.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">"El recorrer la uni por primera vez en compañia de ustedes, para mi fue un momento muy bello"</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/11.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">"Siempre me gusto lo ocurrente que eres
+                    , tu sonrisa y la risa que transmites, no dejes que nadie te quite eso"</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/12.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">"El dia que tratamos de enseñarle a usar la bici a Viri, jajajaja, top sucesos historicos de la BUAP
+                    , fue uno de mis momentos favoritos, tambien porque ese dia conoci por primera a personas como Karen, Erick, Yuli personas
+                    que nos acompañarian en toda la carrera"</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/13.jpg alt="Nuestra primera foto">
+                <p class="pie-foto">Ahora una bonita secuencia</p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="marco-foto">
+                <img src=img/14.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/15.jpg alt="Nuestra primera foto">
+                <p class="pie-foto">La viri diciendo que hay que hacerle como superman y le hizo como spider-man JAJAJ</p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="marco-foto">
+                <img src=img/16.jpg alt="Nuestra primera foto">
+                <p class="pie-foto">No se como te caiste y aun peor me jalaste y me cai yo tambien</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/17.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">"Estoy muy feliz por haberte conocido"</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/18.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="marco-foto">
+                <img src=img/19.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/20.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="marco-foto">
+                <img src=img/21.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/22.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="marco-foto">
+                <img src=img/23.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/24.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="marco-foto">
+                <img src=img/25.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/27.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2>Adivina de las anteriores cual es mi foto favorita</h2>
+                <p class="dedicatoria"></p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/28.jpg alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2>Mariel</h2>
+                <p class="dedicatoria">"Quiero que sepas lo orgulloso que estoy de ti, desde aquel momento en que me contaste que ibas a ir a Europa
+                    , sentí una emoción enorme y supe que ese sería solo el inicio de todo lo que eres capaz de lograr, siempre he creído en ti, en tu fuerza, en tu talento y en esa manera tan especial que tienes de perseguir tus sueños,
+                    aunque ahora no esté tan cerca como antes, quiero que sepas que siempre me preocuparé por ti y que, desde la distancia, voy a seguir celebrando cada paso que des, verte cumplir tus metas me llena de felicidad y se que aun puedes lograr cosas mas importantes, es algo de lo que estoy seguro"</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src=img/26.JPG alt="Nuestra primera foto">
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">"A partir de aquí no quiero que sean solo fotos nuestras, sino recuerdos tuyos de esos momentos felices en los que el tiempo deja de existir, en los que las horas pasan volando y te duela el estomago de tanto reir,
+                    eres una inspiración para mí y para quienes tienen la suerte de conocerte, no olvides nunca lo increíble que eres, lo mucho que vales y lo lejos que puedes llegar, yo estaré aquí, orgulloso, acompañándote en silencio, pero con el corazón siempre contigo.
+                    atte: Te amo mucho Carlos"</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src="" >
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">""</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src="" >
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">""</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src="" >
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">""</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src="" >
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">""</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src="" >
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">""</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src="" >
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">""</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src="" >
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">""</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src="" >
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+        <div class="page interior-izquierda">
+            <div class="texto-intro">
+                <span class="fecha"></span>
+                <h2></h2>
+                <p class="dedicatoria">""</p>
+            </div>
+        </div>
+        <div class="page interior-derecha">
+            <div class="marco-foto">
+                <img src="" >
+                <p class="pie-foto"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="controls">
+    <button id="prev">⬅ Página Anterior</button>
+    <button id="next">Página Siguiente ➡</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Turn.js (ruta correcta según tu carpeta 👉 lib/turn.min.js) -->
+<script src="lib/turn.min.js"></script>
+
+<!-- Tu script -->
+<script src="index.js"></script>
+</body>
+</html>

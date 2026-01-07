@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="309afb16-31f6-45cb-9d40-08dd0b72eb7b" name="Changes" comment="album" />
+    <list default="true" id="309afb16-31f6-45cb-9d40-08dd0b72eb7b" name="Changes" comment="album">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +88,7 @@
       <workItem from="1767750024575" duration="15109000" />
       <workItem from="1767798301455" duration="19000" />
       <workItem from="1767798332252" duration="675000" />
-      <workItem from="1767802604073" duration="1493000" />
+      <workItem from="1767802604073" duration="2492000" />
     </task>
     <task id="LOCAL-00001" summary="album">
       <option name="closed" value="true" />

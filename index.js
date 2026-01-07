@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    const album = $("#a");
+    const album = $("#album");
 
     album.turn({
         width: 700,
